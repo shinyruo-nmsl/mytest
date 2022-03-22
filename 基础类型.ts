@@ -42,5 +42,12 @@ function loop(): never {
 declare function create(o: object | null): void
 create({ prop: 0 })
 
+// 类型断言
+// 断言告诉编译器，相信我，我知道自己在干什么
+let someValue: any = 'this is a string'
+let strLength: number = (<string>someValue).length //我知道它是string类型
+let strLength2: number = (someValue as string).length // 另一种写法
+
+
 
 

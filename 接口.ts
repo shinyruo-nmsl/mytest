@@ -25,7 +25,7 @@ function createSquare(config: SquareConfig): { color: string; area: number } {
 }
 
 let mySquare = createSquare({ color: 'balck' })
-// 下一行代码会报错,原因是属性对不上
+// 下一行代码会报错,原因是属性对不上  ps:好像也没报错，后面试了一下
 // let yourSquare = createSquare({width:200, colour:'red'})
 // 解决办法
 // 断言
